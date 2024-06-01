@@ -1,12 +1,17 @@
+// script.js
+
+// Function to highlight bold words
 function highlight() {
-    //Write your code here
-
-
+    const boldWords = document.querySelectorAll('strong');
+    boldWords.forEach(word => {
+        word.style.color = 'green';
+    });
 }
 
-
+// Function to return bold words to normal color
 function return_normal() {
-    //Write your code here
-
-    
+    const boldWords = document.querySelectorAll('strong');
+    boldWords.forEach(word => {
+        word.style.color = 'black';
+    });
 }
